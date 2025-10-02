@@ -1,0 +1,16 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(CMAKE_C_COMPILER arm-vita-eabi-gcc)
+set(CMAKE_CXX_COMPILER arm-vita-eabi-g++)
+set(CMAKE_AR arm-vita-eabi-ar)
+set(CMAKE_RANLIB arm-vita-eabi-ranlib)
+
+# Vita SDK root
+set(VITASDK $ENV{VITASDK})
+
+set(CMAKE_FIND_ROOT_PATH ${VITASDK}/arm-vita-eabi)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
